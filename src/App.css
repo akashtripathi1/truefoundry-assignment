@@ -1,0 +1,122 @@
+.App {
+  text-align: center;
+}
+
+
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 72px;
+  align-items: center;
+  background-color: white;
+  color: white;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  /* Add a bottom border */
+}
+
+.leadingContent {
+  display: flex;
+  align-items: center;
+}
+
+.leadingContent img {
+  height: 40px;
+  margin-right: 20px;
+}
+
+.leadingContent a {
+  color: white;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+
+
+
+.navigation {
+  list-style: none;
+  /* Remove default list styles */
+  margin: 0;
+  /* Remove default margin */
+  padding: 0;
+  /* Remove default padding */
+}
+
+.navigation li {
+  display: inline-block;
+  /* Display list items horizontally */
+  margin-right: 20px;
+  /* Add spacing between list items */
+}
+
+.navigation li:last-child {
+  margin-right: 0;
+  /* Remove margin from the last list item */
+}
+
+.navigation a {
+  text-decoration: none;
+  /* Remove underline from links */
+  color: #333;
+  /* Set text color for links */
+}
+
+.navigation a.selected {
+  text-decoration: underline;
+  /* Add underline for selected link */
+}
+
+
+.log-dashboard {
+  font-family: 'Lucida Console', Monaco, monospace;
+  color: #090F17;
+  background-color: #090F17;
+}
+
+
+.log-item {
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 4px;
+  margin-bottom: 4px;
+  transition: background-color 0.2s;
+  display: flex;
+  align-items: center;
+}
+
+.log-item:hover {
+  background-color: #333333;
+}
+
+.log-item.expanded .log-message {
+  white-space: normal;
+}
+
+.log-timestamp {
+  color: #9e9e9e;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.log-message {
+  color: #A8C3E8;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-grow: 1;
+}
+
+.single-line {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
