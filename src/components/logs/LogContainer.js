@@ -130,9 +130,9 @@ const handleScrollToBottom = () => {
       container.scrollHeight - container.scrollTop <= container.clientHeight;
 
     // Reset newLogsCount only if scrolled to bottom
-    if (isScrolledToBottom) {
+   
       setNewLogsCount(0);
-    }
+    
   }
 };
 
