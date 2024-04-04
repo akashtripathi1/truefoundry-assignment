@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import Button from '@mui/material/Button';
 import Logo from '../../assets/arrow-up-right-from-square.png';
 import { useLiveFeedStatus } from '../../context/LiveFeedStatusContext';
+import PropTypes from 'prop-types'
+
 
 
 const ViewLogs = ({ startTimestamp, endTimestamp, onClick }) => {
@@ -35,6 +37,11 @@ const ViewLogs = ({ startTimestamp, endTimestamp, onClick }) => {
       </Link>
     </div>
   );
+};
+
+ViewLogs.propTypes = {
+ startTimestamp: PropTypes.number.isRequired,
+ endTimestamp: PropTypes.number.isRequired,
 };
 
 export default ViewLogs;

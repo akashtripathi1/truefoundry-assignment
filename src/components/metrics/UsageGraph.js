@@ -2,6 +2,8 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Chart, registerables } from 'chart.js';
 import Typography from '@mui/material/Typography';
 import ViewLogs from './ViewLogs';
+import PropTypes from 'prop-types'
+
 
 Chart.register(...registerables);
 
@@ -203,6 +205,10 @@ const UsageGraph = ({ title, data }) => {
 
 UsageGraph.defaultProps = {
   title: 'Graph',
+};
+
+UsageGraph.propTypes = {
+  title: PropTypes.string.isRequired,
 };
 
 export default UsageGraph;

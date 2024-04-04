@@ -1,5 +1,7 @@
 import React from 'react';
 import Typography from '@mui/material/Typography';
+import PropTypes from 'prop-types'
+
 
 const GraphTitle = ({ title }) => {
   return (
@@ -7,6 +9,14 @@ const GraphTitle = ({ title }) => {
       {title}
     </Typography>
   );
+};
+
+GraphTitle.propTypes = { 
+  title: PropTypes.string.isRequired,
+};
+
+GraphTitle.defaultProps = { 
+  title: 'GraphTitle',
 };
 
 export default GraphTitle;
