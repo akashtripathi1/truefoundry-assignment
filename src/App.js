@@ -7,7 +7,7 @@ import Metrics from './components/metrics/MetricsContainer';
 import { TimeRangeProvider } from './context/TimeRangeContext';
 import { LiveFeedStatusProvider } from './context/LiveFeedStatusContext';
 import './App.css';
-import Storybook from './components/Storybook';
+
 
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
     <Router>
       <LiveFeedStatusProvider>
         <TimeRangeProvider>
-          <div className='app'>
+          <div className='app'> 
 
             <Navbar title='truefoundry' icon='TFlogo' />
             <Routes>
@@ -31,8 +31,8 @@ function App() {
               )} />
               <Route exact path="/storybook" element={
                 <Fragment>
-                  {/* <Navigate replace to="/storybook-static"/> */}
-                  <Storybook />
+                  <Navigate replace to="/storybook"/>
+
                 </Fragment>} />
             </Routes>
           </div>

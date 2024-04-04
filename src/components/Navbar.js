@@ -9,7 +9,7 @@ import LogsInactive from '../assets/list.png';
 import PropTypes from 'prop-types';
 import { useTimeRangeContext } from '../context/TimeRangeContext';
 import { useLiveFeedStatus } from '../context/LiveFeedStatusContext';
-import Storybook from './Storybook';
+// import Storybook from './Storybook';
 
 
 const Dropdown = ({ setTimeRange }) => {
@@ -138,7 +138,7 @@ const Navbar = ({ title }) => {
               Logs
             </Button>
           </li>
-          <li><Storybook /></li>
+          {/* <li><Storybook /></li> */}
         </ul>
       </div>
       <Dropdown setTimeRange={setSelectedTimeRange} />
