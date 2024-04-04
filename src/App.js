@@ -1,10 +1,9 @@
 // App.js
 import React, { Fragment } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes , Navigate } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Logs from './components/logs/LogContainer';
 import Metrics from './components/metrics/MetricsContainer';
-import Storybook from './components/Storybook';
 import { TimeRangeProvider } from './context/TimeRangeContext';
 import { LiveFeedStatusProvider } from './context/LiveFeedStatusContext';
 import './App.css';
@@ -29,11 +28,7 @@ function App() {
               <Logs />
             </Fragment>
           )} />
-          <Route exact path="/storybook" element={(
-            <Fragment>
-              <Storybook />
-            </Fragment>
-          )} />
+          <Route exact path="/storybook" element={<Navigate to = "/storybook-static/index.html" replace />} />
 
         </Routes>
 
